@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           ShellCheck
-Version:        0.9.0
-Release:        1
+Version:        0.10.0
+Release:        1%{?dist}
 Summary:        Shell script analysis tool
 License:        GPL-3.0-or-later
 URL:            https://www.shellcheck.net/
@@ -29,5 +29,8 @@ install -Dm0755 shellcheck %{buildroot}%{_bindir}/shellcheck
 %doc README.txt LICENSE.txt
 
 %changelog
+* Tue Jun 25 2024 Jamie Curnow <jc@jc21.com> - 0.10.0-1
+- v0.10.0
+
 * Wed Mar 22 2023 Jamie Curnow <jc@jc21.com> - 0.9.0-1
 - v0.9.0
